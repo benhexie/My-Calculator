@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+:root {
+    --primary-color: #363432;
+    --secondary-color: #F0941F;
+    --secondary-color-2: #90A19D;
+    --signs-hover-color: #EF6024;
+    --top-signs-hover-color: #196774;
+    --background-color: #000000;
+    --txt-color: #ffffff;
+
+    /* Fonts */
+    --primary-font: 'Roboto', sans-serif;
+}
+
+body {
+    min-width: 240px;
+}
+header {
+    padding: 1rem;
+    font-family: var(--primary-font);
+}
+.title {
+    font-size: large;
+    font-weight: 300;
+    text-decoration: underline;
+}
+main {
+    color: var(--txt-color);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.calc-div {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 14.15rem;
+    max-width: 14.15rem;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    background-color: var(--background-color);
+    border-radius: 20px;
+}
+.calc-screen {
+    box-sizing: border-box;
+    height: 5rem;
+    color: var(--txt-color);
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    width: 13rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-size: 55px;
+    font-weight: 100;
+    overflow: hidden;
+}
+.table-div {
+    padding: 0.2rem;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0.4rem;
+}
+td {
+    text-align: center;
+    padding: 17px;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    border: none;
+    font-family: var(--primary-font);
+    font-weight: 300;
+}
+td:hover {
+    background-color: var(--secondary-color-2);
+}
+#zero {
+    text-align: left;
+}
+.signs {
+    background-color: var(--secondary-color);
+}
+.signs:hover {
+    background-color: var(--signs-hover-color);
+}
+.top {
+    background-color: var(--secondary-color-2);
+}
+.top:hover {
+    background-color: var(--top-signs-hover-color);
+}

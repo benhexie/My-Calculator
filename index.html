@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Learn</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="title">My Calculator</h1>
+    </header>
+    <main>
+        <div class="calc-div">
+            <div class="calc-screen">
+                <p class="calc-result" id="result">0</p>
+            </div>
+            <div class="table-div">
+                <table>
+                    <tr>
+                        <td class="signs top" id="c">C</td>
+                        <td class="signs top" id="plusOrMinus">+/-</td>
+                        <td class="signs top" id="percentage">%</td>
+                        <td class="signs" id="divide">&divide;</td>
+                    </tr>
+                    <tr>
+                        <td id="seven" onclick="number(7)">7</td>
+                        <td id="eight" onclick="number(8)">8</td>
+                        <td id="nine" onclick="number(9)">9</td>
+                        <td class="signs" id="multiply">x</td>
+                    </tr>
+                    <tr>
+                        <td id="four" onclick="number(4)">4</td>
+                        <td id="five" onclick="number(5)">5</td>
+                        <td id="six" onclick="number(6)">6</td>
+                        <td class="signs" id="minus">-</td>
+                    </tr>
+                    <tr>
+                        <td id="one" onclick="number(1)">1</td>
+                        <td id="two" onclick="number(2)">2</td>
+                        <td id="three" onclick="number(3)">3</td>
+                        <td class="signs" id="plus">+</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="zero" onclick="number(0)">0</td>
+                        <td id="dot">.</td>
+                        <td class="signs" id="equals">=</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
